@@ -3,128 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Веганские рецепты от Насти</title>
-    <!-- Подключение стилей -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Подключение шрифтов -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Обо мне - Веганские рецепты от Насти</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .about-section {
+            padding: 60px 0;
+            background: #f9f9f9;
+        }
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .about-image {
+            flex: 1;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .about-content {
+            flex: 1;
+        }
+        .about-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        .about-text {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Шапка сайта -->
-    <header class="header">
-        <div class="container">
-            <nav class="nav">
-                <a href="index.html" class="logo">Настя's Vegan</a>
-                <ul class="nav-list">
-                    <li><a href="index.html" class="active">Главная</a></li>
-                    <li><a href="about.html">Обо мне</a></li>
-                    <li><a href="recipes.html">Рецепты</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="./about.html">Обо мне</a></li>
+                <li><a href="./recipes.html">Рецепты</a></li>
+                <li><a href="./contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Основной контент -->
-    <main class="main">
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 class="hero-title">Вкусные веганские рецепты</h1>
-                    <p class="hero-text">От Насти с любовью и многолетним опытом</p>
-                    <a href="recipes.html" class="btn">Посмотреть рецепты</a>
+    <main>
+        <section class="about-section">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="./images/nastya.jpg" alt="Настя">
                 </div>
-                <div class="hero-image">
-                    <img src="images/hero-image.jpg" alt="Веганские блюда" loading="lazy">
-                </div>
-            </div>
-        </section>
-
-        <section class="featured-recipes">
-            <div class="container">
-                <h2 class="section-title">Популярные рецепты</h2>
-                <div class="recipes-grid">
-                    <!-- Рецепт 1 -->
-                    <article class="recipe-card">
-                        <img src="images/recipe-1.jpg" alt="Паста с грибами" class="recipe-image" loading="lazy">
-                        <div class="recipe-content">
-                            <h3>Кремовая паста с грибами</h3>
-                            <div class="recipe-meta">
-                                <span>25 мин</span>
-                                <span>Легко</span>
-                            </div>
-                            <a href="recipe-1.html" class="btn recipe-btn">Смотреть рецепт</a>
-                        </div>
-                    </article>
-                    
-                    <!-- Рецепт 2 -->
-                    <article class="recipe-card">
-                        <img src="images/recipe-2.jpg" alt="Чиа пудинг" class="recipe-image" loading="lazy">
-                        <div class="recipe-content">
-                            <h3>Чиа пудинг с ягодами</h3>
-                            <div class="recipe-meta">
-                                <span>10 мин</span>
-                                <span>Легко</span>
-                            </div>
-                            <a href="recipe-2.html" class="btn recipe-btn">Смотреть рецепт</a>
-                        </div>
-                    </article>
-                    
-                    <!-- Рецепт 3 -->
-                    <article class="recipe-card">
-                        <img src="images/recipe-3.jpg" alt="Фалафель" class="recipe-image" loading="lazy">
-                        <div class="recipe-content">
-                            <h3>Домашний фалафель</h3>
-                            <div class="recipe-meta">
-                                <span>40 мин</span>
-                                <span>Средне</span>
-                            </div>
-                            <a href="recipe-3.html" class="btn recipe-btn">Смотреть рецепт</a>
-                        </div>
-                    </article>
-                    
-                    <!-- Рецепт 4 -->
-                    <article class="recipe-card">
-                        <img src="images/recipe-04.jpg" alt="Овощное карри" class="recipe-image" loading="lazy">
-                        <div class="recipe-content">
-                            <h3>Овощное карри с тофу</h3>
-                            <div class="recipe-meta">
-                                <span>35 мин</span>
-                                <span>Средне</span>
-                            </div>
-                            <a href="recipe-4.html" class="btn recipe-btn">Смотреть рецепт</a>
-                        </div>
-                    </article>
-                    
-                    <!-- Рецепт 5 -->
-                    <article class="recipe-card">
-                        <img src="images/recipe-05.jpg" alt="Веганский чизкейк" class="recipe-image" loading="lazy">
-                        <div class="recipe-content">
-                            <h3>Веганский чизкейк</h3>
-                            <div class="recipe-meta">
-                                <span>60 мин</span>
-                                <span>Сложно</span>
-                            </div>
-                            <a href="recipe-5.html" class="btn recipe-btn">Смотреть рецепт</a>
-                        </div>
-                    </article>
+                <div class="about-content">
+                    <h1 class="about-title">Привет, я Настя</h1>
+                    <p class="about-text">Я профессиональный повар и веган с 10-летним опытом. Моя миссия - показать, что веганская кухня может быть вкусной, разнообразной и доступной для всех.</p>
+                    <p class="about-text">В моих рецептах вы найдете только проверенные сочетания ингредиентов, которые действительно работают. Я тестирую каждый рецепт минимум 3 раза перед публикацией.</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Подвал -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2023 Веганские рецепты от Насти. Все права защищены.</p>
-        </div>
+    <footer>
+        <p>© 2023 Веганские рецепты от Насти</p>
     </footer>
-
-    <!-- Скрипты -->
-    <script src="js/main.js"></script>
 </body>
 </html>
